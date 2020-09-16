@@ -1,0 +1,52 @@
+.landing-section {
+  width: 100%;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-color: #16161a;
+  height: 100vh;
+
+  &-overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(127, 90, 240, 0.2);
+
+    .landing-content {
+      height: 80%;
+      text-align: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &-title {
+        p {
+          font-size: 7rem;
+          font-family: "Gilmer-heavy", sans-serif;
+        }
+
+        span {
+          font-family: "Gilmer-outline", sans-serif;
+        }
+      }
+      &-tagline {
+        p {
+          font-size: 4rem;
+          font-family: "Gilmer-heavy", sans-serif;
+        }
+      }
+
+      &-dates {
+        margin-top: 1.5rem;
+        p {
+          font-size: 2rem;
+          font-family: $font-FM;
+        }
+      }
+    }
+  }
+}
