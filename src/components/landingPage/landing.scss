@@ -47,6 +47,13 @@
           font-family: $font-FM;
         }
       }
+
+      &-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+      }
     }
   }
 }
