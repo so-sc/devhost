@@ -1,34 +1,36 @@
 //fonts
 @font-face {
-    font-family: "Gilmer-heavy";
-    src: url("./font/gilmer/GilmerHeavy.otf");
+  font-family: "Gilmer-heavy";
+  src: url("./font/gilmer/GilmerHeavy.otf");
 }
 
 @font-face {
-    font-family: "Gilmer-light";
-    src: url("./font/gilmer/GilmerLight.otf");
+  font-family: "Gilmer-light";
+  src: url("./font/gilmer/GilmerLight.otf");
 }
 
 @font-face {
-    font-family: "Gilmer-medium";
-    src: url("./font/gilmer/GilmerMedium.otf");
+  font-family: "Gilmer-medium";
+  src: url("./font/gilmer/GilmerMedium.otf");
 }
 
 @font-face {
-    font-family: "Gilmer-outline";
-    src: url("./font/gilmer/GilmerOutline.otf");
+  font-family: "Gilmer-outline";
+  src: url("./font/gilmer/GilmerOutline.otf");
 }
 
 @font-face {
-    font-family: "Gilmer-regular";
-    src: url("./font/gilmer/GilmerRegular.otf");
+  font-family: "Gilmer-regular";
+  src: url("./font/gilmer/GilmerRegular.otf");
 }
 
 //open sans & fira mono
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
 
 /*
 font-family: 'Fira Mono', monospace;
 font-family: 'Open Sans', sans-serif;
+font-family: 'Nunito', sans-serif;
 */

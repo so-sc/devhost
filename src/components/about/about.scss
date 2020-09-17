@@ -1,0 +1,57 @@
+.About-section {
+  background-color: $color-background;
+
+  .about {
+    padding-top: 100px;
+    padding-bottom: 60px;
+
+    &-content {
+      color: white;
+      p {
+        font-family: $font-NN;
+        color: $color-paragraph;
+        font-size: 2rem;
+      }
+    }
+
+    &-cards {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 50px;
+    }
+  }
+}
+
+.card {
+  margin: 20px;
+  max-width: 280px;
+  min-width: 250px;
+  min-height: 360px;
+  &-outline {
+    background-color: $color-background;
+    border: solid $color-violet 2px;
+
+    .card-face {
+      position: relative;
+      top: -15px;
+      left: -10px;
+      background-color: $color-background-card;
+
+      .card-content {
+        padding: 25px;
+        &-title {
+          font-family: "Gilmer-medium", sans-serif;
+          color: white;
+          font-size: 2rem;
+        }
+
+        &-details {
+          padding-top: 20px;
+          font-family: $font-NN;
+          font-size: 1.5rem;
+          color: $color-paragraph;
+        }
+      }
+    }
+  }
+}
