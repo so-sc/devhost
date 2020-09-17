@@ -38,6 +38,10 @@ const Landing = () => {
             <div className="landing-content-dates">
               <p>October 01 - October 02</p>
             </div>
+            <div className='landing-content-button'>
+              <a target="_blank" rel="noopener" className='btn btn_violet' href='https://devfolio.co/'>Register with Devfolio</a>
+              <a target="_blank" rel="noopener" className='btn btn_violet-outline' href='https://devfolio.co/'>Explore Events</a>
+            </div>
           </div>
         </div>
       </BackgroundImage>
