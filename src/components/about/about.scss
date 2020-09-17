@@ -1,23 +1,21 @@
-.About-section {
-  background-color: $color-background;
+.about {
+  padding: 100px 0;
 
-  .about {
-    padding: 100px 0;
-    &-content {
-      color: white;
-      p {
-        font-family: $font-NN;
-        color: $color-paragraph;
-        font-size: 2rem;
-        text-align: justify;
-      }
+  &-content {
+    color: white;
+    
+    p {
+      font-family: $font-NN;
+      color: $color-paragraph;
+      font-size: 2rem;
+      text-align: justify;
     }
+  }
 
-    &-cards {
-      display: flex;
-      justify-content: space-evenly;
-      padding-top: 50px;
-    }
+  &-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
   }
 }
 
