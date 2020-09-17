@@ -3,8 +3,9 @@ header {
   background-color: transparent;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0.5rem;
-
+  position: absolute;
+  width: 100%;
+  z-index: 100;
   flex-direction: row;
 
   .header_logo {
@@ -26,10 +27,12 @@ header {
   .header_navigation {
     display: flex;
     color: $color-white;
+    
     &-item {
       font-family: $font-OS;
       list-style: none;
       font-size: 1.4rem;
+      
       &:not(:last-child) {
         margin-right: 2.5rem;
       }

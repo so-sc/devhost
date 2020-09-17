@@ -34,3 +34,37 @@ font-family: 'Fira Mono', monospace;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Nunito', sans-serif;
 */
+
+.section {
+  &__title {
+    color: $color-white;
+    font-family: 'Gilmer-medium';
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px 0px 40px;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 5rem;
+  
+    &::before {
+      position: relative;
+      counter-increment: section;
+      content: "0" counter(section) ".";
+      margin-right: 3rem;
+      font-family: font-FM;
+      color: $color-violet;
+      font-size: 3rem;
+    }
+  
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      width: 30rem;
+      background-color: $color-line;
+      margin-left: 1.5rem;
+      position: relative;
+      top: -18px;
+    }
+  }
+}

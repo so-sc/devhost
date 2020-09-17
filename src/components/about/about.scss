@@ -2,15 +2,14 @@
   background-color: $color-background;
 
   .about {
-    padding-top: 100px;
-    padding-bottom: 60px;
-
+    padding: 100px 0;
     &-content {
       color: white;
       p {
         font-family: $font-NN;
         color: $color-paragraph;
         font-size: 2rem;
+        text-align: justify;
       }
     }
 
@@ -34,7 +33,7 @@
     .card-face {
       position: relative;
       top: -15px;
-      left: -10px;
+      left: -15px;
       background-color: $color-background-card;
 
       .card-content {
@@ -46,6 +45,7 @@
         }
 
         &-details {
+          text-align: justify;
           padding-top: 20px;
           font-family: $font-NN;
           font-size: 1.5rem;
