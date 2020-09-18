@@ -1,0 +1,57 @@
+.events {
+  padding-top: 100px;
+
+  &-holder {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.Event-card {
+  margin: 10px;
+  &-base {
+    display: flex;
+
+    &-left {
+      flex: 0.5;
+    }
+
+    &-right {
+      flex: 0.7;
+    }
+
+    &-content {
+      position: absolute;
+
+      .event-type {
+        font-size: 2rem;
+        font-family: $font-FM;
+        color: $color-violet;
+      }
+
+      .event-title {
+        font-family: $font-OS;
+        font-size: 4rem;
+        color: white;
+        font-weight: 600;
+      }
+      .event-time {
+        font-size: 2rem;
+        font-family: $font-FM;
+        color: $color-violet;
+      }
+
+      .event-details {
+        margin-top: 20px;
+        background-color: $color-background-card;
+        max-width: 60%;
+        &-info {
+          padding: 25px;
+          font-size: 1.8rem;
+          color: $color-paragraph;
+          font-family: $font-NN;
+        }
+      }
+    }
+  }
+}
