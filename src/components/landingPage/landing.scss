@@ -35,7 +35,8 @@
       &-tagline {
         p {
           font-size: 4rem;
-          font-family: "Gilmer-heavy", sans-serif;
+          font-family: $font-OS;
+          font-weight: 600;
         }
       }
 

@@ -5,6 +5,8 @@ import Landing from "../components/landingPage/landing"
 import About from "../components/about/about"
 import Speakers from "../components/speakers/speakers"
 import Events from "../components/events/events"
+import Association from "../components/association/association"
+import Sponsors from "../components/sponsors/sponsors"
 const IndexPage = () => {
   return (
     <Layout>
@@ -12,6 +14,8 @@ const IndexPage = () => {
       <About />
       <Speakers />
       <Events />
+      <Association />
+      <Sponsors />
     </Layout>
   )
 }
