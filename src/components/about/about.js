@@ -2,10 +2,9 @@ import React from "react"
 import Container from "../container"
 const About = () => {
   return (
-    <section className="About-section">
       <Container>
-        <div className="about">
-          <div className="about-header"></div>
+        <section className="about">
+          <h3 className="section__title">About</h3>
           <div className="about-content">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -14,15 +13,13 @@ const About = () => {
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-
           <div className="about-cards">
             <InfoCard />
             <InfoCard />
             <InfoCard />
           </div>
-        </div>
+        </section>
       </Container>
-    </section>
   )
 }
 

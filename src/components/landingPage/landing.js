@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "../header"
 import BackgroundImage from "gatsby-background-image"
 
 const Landing = () => {
@@ -25,7 +24,6 @@ const Landing = () => {
         className={"landing-section"}
       >
         <div className="landing-section-overlay">
-          <Header />
           <div className="landing-content">
             <div className="landing-content-title">
               <p>

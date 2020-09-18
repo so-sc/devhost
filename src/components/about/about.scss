@@ -1,24 +1,21 @@
-.About-section {
-  background-color: $color-background;
+.about {
+  padding: 100px 0;
 
-  .about {
-    padding-top: 100px;
-    padding-bottom: 60px;
-
-    &-content {
-      color: white;
-      p {
-        font-family: $font-NN;
-        color: $color-paragraph;
-        font-size: 2rem;
-      }
+  &-content {
+    color: white;
+    
+    p {
+      font-family: $font-NN;
+      color: $color-paragraph;
+      font-size: 2rem;
+      text-align: justify;
     }
+  }
 
-    &-cards {
-      display: flex;
-      justify-content: space-evenly;
-      padding-top: 50px;
-    }
+  &-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
   }
 }
 
@@ -34,7 +31,7 @@
     .card-face {
       position: relative;
       top: -15px;
-      left: -10px;
+      left: -15px;
       background-color: $color-background-card;
 
       .card-content {
@@ -46,6 +43,7 @@
         }
 
         &-details {
+          text-align: justify;
           padding-top: 20px;
           font-family: $font-NN;
           font-size: 1.5rem;
