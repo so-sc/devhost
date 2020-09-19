@@ -30,8 +30,9 @@ const Speakers = () => {
 `)
 
   return (
-    <Container>
+
       <section className="speakers">
+      <Container>
         <h3 className="section__title">Speakers</h3>
         <SpeakerCard
           image={data.musthak.childImageSharp.fluid}
@@ -51,8 +52,8 @@ const Speakers = () => {
           linkedin="https://www.linkedin.com/"
           website="https://haxzie.com/"
         />
-      </section>
-    </Container>
+      </Container>
+    </section>
   )
 }
 

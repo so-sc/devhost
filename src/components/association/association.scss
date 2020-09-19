@@ -1,0 +1,14 @@
+.association {
+    padding: 100px 0;
+
+    &__images {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        &-size {
+            margin: 5rem;
+            width: 15rem;
+        }
+    }
+}

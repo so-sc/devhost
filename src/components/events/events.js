@@ -12,6 +12,20 @@ const Events = () => {
           }
         }
       }
+      musthak: file(relativePath: { eq: "speakers/Musthak.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      } 
+      halfRose: file(relativePath: { eq: "speakers/halfRose.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -19,16 +33,31 @@ const Events = () => {
       <Container>
         <h3 className="section__title">Events</h3>
         <div className="events-holder">
-          <EventCard image={data.Event_1.childImageSharp.fluid} />
-          <EventCard image={data.Event_1.childImageSharp.fluid} />
-          <EventCard image={data.Event_1.childImageSharp.fluid} />
+          <EventCard
+            image={data.Event_1.childImageSharp.fluid}
+            speaker="Musthak Ahamed"
+            speakerImage={data.musthak.childImageSharp.fluid}
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat."
+          />
+          <EventCard
+            image={data.Event_1.childImageSharp.fluid}
+            speaker="Half Rose"
+            speakerImage={data.halfRose.childImageSharp.fluid}
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat."
+          />
         </div>
       </Container>
     </section>
   )
 }
 
-const EventCard = ({ image }) => {
+const EventCard = ({ image, description, speaker, speakerImage }) => {
   return (
     <div className="Event-card">
       <div className="Event-card-base">
@@ -43,10 +72,11 @@ const EventCard = ({ image }) => {
           <p className="event-time">11:00 AM - 12:00 PM</p>
           <div className="event-details">
             <div className="event-details-info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              {description}
+            </div>
+            <div className="event-details-speaker">
+              <Img className="event-details-speaker-image" fluid={speakerImage} alt="speakers" />
+              <h3 className="event-details-speaker-name">{speaker}</h3>
             </div>
           </div>
         </div>
