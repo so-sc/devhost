@@ -6,35 +6,48 @@ header {
   position: absolute;
   width: 100%;
   z-index: 100;
-  flex-direction: row;
 
-  .header_logo {
-    &-devhost {
-      @include respond(tab-port) {
-        width: 75%;
-      }
+  .header__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &_logo {
       @include respond(phone) {
-        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
       }
 
-      @include respond(small-phone) {
-        width: 55%;
+      &-devhost {
+        @include respond(tab-port) {
+          width: 75%;
+        }
       }
     }
-  }
 
-  .header_navigation {
-    display: flex;
-    color: $color-white;
-    
-    &-item {
-      font-family: $font-OS;
-      list-style: none;
-      font-size: 1.4rem;
-      
-      &:not(:last-child) {
-        margin-right: 2.5rem;
+    &_navigation {
+      display: flex;
+      color: $color-white;
+
+      @include respond(phone) {
+        visibility: hidden;
+      }
+
+      &-item {
+        font-family: $font-OS;
+        list-style: none;
+        font-size: 1.4rem;
+
+        &:not(:last-child) {
+          margin-right: 2.5rem;
+        }
       }
     }
   }

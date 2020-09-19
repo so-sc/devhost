@@ -1,6 +1,15 @@
 .about {
-  padding: 100px 0;
 
+  @include respond(big-desktop) {
+    padding: 100px 0;
+
+}
+@include respond(phone) {
+  padding: 50px 0;
+}
+@include respond(small-phone) {
+  padding: 50px 0;
+}
   &-content {
     color: white;
     
@@ -16,14 +25,34 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 50px;
+
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+  }
+  @include respond(small-phone) {
+    flex-direction: column;
+    justify-content: center;
+}
+
+    
   }
 }
 
 .card {
   margin: 20px;
-  max-width: 280px;
-  min-width: 250px;
-  min-height: 360px;
+  min-width: 220px;
+  max-width:220px;
+  @include respond(big-desktop) {
+    max-width: 280px;
+}
+@include respond(phone) {
+  align-self:center;
+  }
+  @include respond(small-phone) {
+    align-self:center;
+    }
+
   &-outline {
     background-color: $color-background;
     border: solid $color-violet 2px;

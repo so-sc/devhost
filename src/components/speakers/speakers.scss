@@ -6,28 +6,56 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
+
+    @include respond (tab-land) {
+        flex-direction: column;
+    }
+
     &__left {
         padding: 4rem 10rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         color: $color-white;
+        justify-content: center;
+
+        @include respond(tab-land) {
+            background-color: $color-background-card;
+            padding: 1.5rem;
+            justify-content: center;
+            border-radius: 5px 5px 0 0;
+        }
 
         &-image {
             width: 20rem;
             border-radius: 100%;
+
+            @include respond(tab-land) {
+                width: 15rem;
+            }
         }
 
         &-title {
             margin-top: 2rem;
             font-family: $font-OS;
             letter-spacing: .15rem;
+
+            @include respond(tab-land) {
+                font-size: 2rem;
+                font-weight: 700;
+                letter-spacing: 0;
+            }
         }
 
         &-subtitle {
             margin-top: .5rem;
             font-family: $font-FM;
             font-weight: 400;
+
+            @include respond(tab-land) {
+                text-align: center;
+                font-size: 1.6rem;
+            }
         }
     }
 
@@ -35,6 +63,11 @@
         background-color: $color-background-card;
         padding: 5rem 10rem;
         border-radius: 5px;
+
+        @include respond(tab-land) {
+            padding: 1.5rem;
+            border-radius: 0 0 5px 5px ;
+        }
 
         &-title {
             color: $color-white;
@@ -51,6 +84,10 @@
             font-weight: 400;
             font-size: 1.6rem;
             text-align: justify;
+
+            @include respond(tab-land) {
+                margin: 2rem 0;
+            }
         }
 
         &__link {
@@ -62,8 +99,16 @@
                 &-github {
                     margin-right: 2rem;
 
+                    @include respond(tab-land) {
+                        width: 3rem;
+                    }
                 }
 
+                &-image {
+                    @include respond(tab-land) {
+                        width: 3rem;
+                    }
+                }
 
             }
         }
