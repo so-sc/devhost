@@ -76,12 +76,12 @@ const SpeakerCard = ({ image, speakerName, subTitle, description, git, linkedin,
               href={git}><img className="speakercard__right__link-left-github" src={Github} alt="github logo" /></a>
             <a target="_blank"
               rel="noreferrer"
-              href={linkedin}><img src={Linkedin} alt="linkedin logo" /></a>
+              href={linkedin}><img className="speakercard__right__link-left-image" src={Linkedin} alt="linkedin logo" /></a>
           </div>
           <div className="card__right__link-right">
             <a target="_blank"
               rel="noreferrer"
-              href={website}><img src={Website} alt="website logo" /></a>
+              href={website}><img className="speakercard__right__link-left-image" src={Website} alt="website logo" /></a>
           </div>
         </div>
       </div>

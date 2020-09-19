@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
     </div>
     <div className="copyright-area">
-      <p>DevHost © {new Date().getFullYear()}</p>
+      <p>devhost © {new Date().getFullYear()}</p>
     </div>
   </footer>
 }
