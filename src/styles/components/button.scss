@@ -1,44 +1,53 @@
 .btn {
-    &,
-    &:link,
-    &:visited {
-        font-family: 'Open Sans', sans-serif;
-        text-decoration: none;
-        height: 5rem;
-        width: 20rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        transition: all 0.2s;
-        font-size: 1.6rem;
-        border: none;
-        cursor: pointer;
+  &,
+  &:link,
+  &:visited {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    height: 5rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all 0.2s;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+  }
 
-        
+  &:hover {
+    transform: translateY(-0.3rem);
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-0.1rem);
+    outline: none;
+  }
+
+  &_violet {
+    background-color: $color-violet;
+    color: $color-white;
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+
+      @include respond(phone) {
+        margin-right: 0rem;
+      }
+      @include respond(small-phone) {
+        margin-right: 0rem;
+      }
     }
 
-    &:hover {
-        transform: translateY(-0.3rem);
-    }
+    &-outline {
+      color: $color-white;
+      border: 2px solid $color-violet !important;
 
-    &:active,
-    &:focus {
-        transform: translateY(-0.1rem);
-        outline: none;
+      @include respond(phone) {
+        margin-top: 3rem;
+      }
     }
-
-    &_violet {
-        background-color: $color-violet;
-        color: $color-white;
-
-        &:not(:last-child) {
-            margin-right: 2.5rem;
-          }
-          
-        &-outline {
-            color: $color-white;
-            border: 2px solid $color-violet !important; 
-        }
-    }
+  }
 }

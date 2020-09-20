@@ -26,6 +26,14 @@
         p {
           font-size: 7rem;
           font-family: "Gilmer-heavy", sans-serif;
+
+          @include respond(phone) {
+            font-size: 5rem;
+          }
+
+          @include respond(small-phone) {
+            font-size: 4rem;
+          }
         }
 
         span {
@@ -37,6 +45,13 @@
           font-size: 4rem;
           font-family: $font-OS;
           font-weight: 600;
+
+          @include respond(phone) {
+            font-size: 3rem;
+          }
+          @include respond(small-phone) {
+            font-size: 2rem;
+          }
         }
       }
 
@@ -53,6 +68,12 @@
         align-items: center;
         justify-content: center;
         margin-top: 5rem;
+        @include respond(small-phone) {
+          flex-direction: column;
+        }
+        @include respond(phone) {
+          flex-direction: column;
+        }
       }
     }
   }
