@@ -1,6 +1,13 @@
 .events {
   padding: 100px 0;
 
+  @include respond(phone) {
+    padding: 50px 0;
+  }
+  @include respond(small-phone) {
+    padding: 30px 0;
+  }
+
   &-holder {
     display: flex;
     flex-direction: column;
@@ -22,11 +29,22 @@
 
     &-content {
       position: absolute;
+      @include respond(phone) {
+        position: relative;
+        background-color: $color-background-card;
+      }
 
       .event-type {
         font-size: 2rem;
         font-family: $font-FM;
         color: $color-violet;
+
+        @include respond(phone) {
+          padding-left: 25px;
+          padding-top: 25px;
+
+          font-size: 1.5rem;
+        }
       }
 
       .event-title {
@@ -34,17 +52,31 @@
         font-size: 4rem;
         color: white;
         font-weight: 600;
+
+        @include respond(phone) {
+          font-size: 3rem;
+          padding-left: 25px;
+        }
       }
       .event-time {
         font-size: 2rem;
         font-family: $font-FM;
         color: $color-violet;
+
+        @include respond(phone) {
+          font-size: 1.5rem;
+          padding-left: 25px;
+        }
       }
 
       .event-details {
         margin-top: 20px;
         background-color: $color-background-card;
         max-width: 60%;
+        @include respond(phone) {
+          max-width: 98%;
+        }
+
         &-info {
           padding: 25px;
           font-size: 1.8rem;
