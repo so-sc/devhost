@@ -4,9 +4,6 @@
   @include respond(phone) {
     padding: 50px 0;
   }
-  @include respond(small-phone) {
-    padding: 30px 0;
-  }
 
   &-holder {
     display: flex;
@@ -29,7 +26,7 @@
 
     &-content {
       position: absolute;
-      @include respond(phone) {
+      @include respond(tab-land) {
         position: relative;
         background-color: $color-background-card;
       }
@@ -39,7 +36,7 @@
         font-family: $font-FM;
         color: $color-violet;
 
-        @include respond(phone) {
+        @include respond(tab-land) {
           padding-left: 25px;
           padding-top: 25px;
 
@@ -53,7 +50,7 @@
         color: white;
         font-weight: 600;
 
-        @include respond(phone) {
+        @include respond(tab-land) {
           font-size: 3rem;
           padding-left: 25px;
         }
@@ -63,7 +60,7 @@
         font-family: $font-FM;
         color: $color-violet;
 
-        @include respond(phone) {
+        @include respond(tab-land) {
           font-size: 1.5rem;
           padding-left: 25px;
         }
@@ -73,7 +70,7 @@
         margin-top: 20px;
         background-color: $color-background-card;
         max-width: 60%;
-        @include respond(phone) {
+        @include respond(tab-land) {
           max-width: 98%;
         }
 
