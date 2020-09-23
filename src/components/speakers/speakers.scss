@@ -51,6 +51,7 @@
             margin-top: .5rem;
             font-family: $font-FM;
             font-weight: 400;
+            text-align: center;
 
             @include respond(tab-land) {
                 text-align: center;
