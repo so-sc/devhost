@@ -17,10 +17,22 @@ const Header = () => {
           </div>
           <ul className="header__container_navigation">
             <li className="header__container_navigation-item">
-              Community Guidelines
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/so-sc/code-of-conduct"
+              >
+                Community Guidelines
+              </a>
             </li>
             <li className="header__container_navigation-item">
-              Code of Conduct
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/so-sc/code-of-conduct"
+              >
+                Code of Conduct
+              </a>
             </li>
             <li className="header__container_navigation-item">Contact</li>
           </ul>
@@ -29,6 +41,5 @@ const Header = () => {
     </header>
   )
 }
-
 
 export default Header
