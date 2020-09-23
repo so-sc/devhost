@@ -40,22 +40,24 @@
 
 .card {
   margin: 20px;
-  min-width: 300px;
-  min-height: 400px;
-  max-width: 300px;
-  max-height: 400px;
+  min-width: 350px;
+  min-height: 410px;
+  max-width: 350px;
+  max-height: 410px;
   position: relative;
   @include respond(tab-land) {
     align-self: center;
     min-height: 300px;
     max-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
     margin-bottom: 50px;
   }
 
   .card-face {
     position: relative;
     background-color: $color-background-card;
-    height: 350px;
+    height: 100%;
     @include respond(tab-land) {
       height: 310px;
     }
