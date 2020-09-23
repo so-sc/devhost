@@ -41,9 +41,9 @@ const Landing = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn_violet"
-                href="https://devfolio.co/"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd2-AID4jmYyNQQvFHHNd2fcMuxfZ-fo2McHbx_4__jbYpWYQ/viewform"
               >
-                Register with Devfolio
+                Register Now
               </a>
               <a
                 target="_blank"
@@ -51,7 +51,7 @@ const Landing = () => {
                 className="btn btn_violet-outline"
                 href="https://devfolio.co/"
               >
-                Explore Events
+                Explore Hackathon
               </a>
             </div>
           </div>

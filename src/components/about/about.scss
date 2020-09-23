@@ -1,23 +1,27 @@
 .about {
-
   @include respond(big-desktop) {
     padding: 100px 0;
-
-}
-@include respond(phone) {
-  padding: 50px 0;
-}
-@include respond(small-phone) {
-  padding: 50px 0;
-}
+  }
+  @include respond(phone) {
+    padding: 50px 0;
+  }
+  @include respond(small-phone) {
+    padding: 50px 0;
+  }
   &-content {
     color: white;
-    
+
     p {
-      font-family: $font-NN;
+      font-family: $font-OS;
       color: $color-paragraph;
       font-size: 2rem;
       text-align: justify;
+      line-height: 3rem;
+      letter-spacing: 0.015em;
+
+      a {
+        color: $color-violet;
+      }
     }
   }
 
@@ -26,59 +30,65 @@
     justify-content: space-evenly;
     padding-top: 50px;
 
-    @include respond(phone) {
+    @include respond(tab-land) {
       flex-direction: column;
       justify-content: center;
-  }
-  @include respond(small-phone) {
-    flex-direction: column;
-    justify-content: center;
-}
-
-    
+      align-items: center;
+    }
   }
 }
 
 .card {
   margin: 20px;
-  min-width: 220px;
-  max-width:220px;
-  @include respond(big-desktop) {
-    max-width: 280px;
-}
-@include respond(phone) {
-  align-self:center;
+  min-width: 300px;
+  min-height: 400px;
+  max-width: 300px;
+  max-height: 400px;
+  position: relative;
+  @include respond(tab-land) {
+    align-self: center;
+    min-height: 300px;
+    max-height: 300px;
+    margin-bottom: 50px;
   }
-  @include respond(small-phone) {
-    align-self:center;
+
+  .card-face {
+    position: relative;
+    background-color: $color-background-card;
+    height: 350px;
+    @include respond(tab-land) {
+      height: 310px;
     }
 
-  &-outline {
-    background-color: $color-background;
-    border: solid $color-violet 2px;
-
-    .card-face {
-      position: relative;
-      top: -15px;
-      left: -15px;
-      background-color: $color-background-card;
-
-      .card-content {
-        padding: 25px;
-        &-title {
-          font-family: "Gilmer-medium", sans-serif;
-          color: white;
-          font-size: 2rem;
-        }
-
-        &-details {
-          text-align: justify;
-          padding-top: 20px;
-          font-family: $font-NN;
-          font-size: 1.5rem;
-          color: $color-paragraph;
-        }
+    .card-content {
+      padding: 25px;
+      &-title {
+        font-family: "Gilmer-medium", sans-serif;
+        color: white;
+        font-size: 2rem;
       }
+
+      &-details {
+        text-align: justify;
+        padding-top: 20px;
+        font-family: $font-OS;
+        font-size: 1.6rem;
+        color: $color-paragraph;
+        height: 100%;
+        line-height: 2.8rem;
+        letter-spacing: 0.015em;
+      }
+    }
+
+    &-outline {
+      height: 100%;
+      width: 100%;
+      background-color: $color-background;
+      border: solid $color-violet 2px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: -5;
     }
   }
 }
