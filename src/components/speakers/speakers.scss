@@ -85,6 +85,8 @@
             font-weight: 400;
             font-size: 1.6rem;
             text-align: justify;
+            line-height: 3rem;
+            letter-spacing: 0.015em;
 
             @include respond(tab-land) {
                 margin: 2rem 0;
