@@ -45,14 +45,21 @@
       }
 
       .event-title {
+        max-width: 550px;
         font-family: $font-OS;
-        font-size: 4rem;
+        font-size: 3rem;
         color: white;
         font-weight: 600;
+        margin: 1rem 0;
+
+        @include respond(big-desktop) {
+          font-size: 2.5rem;
+        }
 
         @include respond(tab-land) {
+          max-width: 100%;
           font-size: 3rem;
-          padding-left: 25px;
+          padding: 0 25px;
         }
       }
       .event-time {
@@ -80,6 +87,8 @@
           color: $color-paragraph;
           font-family: $font-OS;
           text-align: justify;
+          line-height: 3rem;
+          letter-spacing: 0.015em;
         }
 
         &-speaker {
