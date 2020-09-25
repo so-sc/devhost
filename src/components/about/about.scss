@@ -52,6 +52,22 @@
     margin-bottom: 50px;
   }
 
+  @include respond(phone) {
+    min-height: 280px;
+    max-height: 280px;
+    min-width: 230px;
+    max-width: 230px;
+    margin-bottom: 80px;
+  }
+
+  @include respond(small-phone) {
+    min-height: 280px;
+    max-height: 280px;
+    min-width: 200px;
+    max-width: 200px;
+    margin-bottom: 80px;
+  }
+
   .card-face {
     position: relative;
     background-color: $color-background-card;
@@ -62,6 +78,10 @@
 
     .card-content {
       padding: 25px;
+
+      @include respond(small-phone) {
+        padding: 10px;
+      }
       &-title {
         font-family: "Gilmer-medium", sans-serif;
         color: white;

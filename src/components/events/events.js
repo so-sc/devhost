@@ -7,13 +7,6 @@ import ScrollAnimation from "react-animate-on-scroll"
 const Events = () => {
   const data = useStaticQuery(graphql`
     query {
-      Event_1: file(relativePath: { eq: "Event_img.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       musthak: file(relativePath: { eq: "speakers/Musthak.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
@@ -61,7 +54,6 @@ const Events = () => {
               title="Introduction to UI/UX"
               type="Talk"
               speaker="Grace Ling"
-              image={data.Event_1.childImageSharp.fluid}
               speakerImage={data.grace.childImageSharp.fluid}
               description="User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing usability and the user experience. Learn about this exciting field in this 1 hour insightful session."
               schedule="1 OCT 2020, 10:05 AM - 11:05 AM"
@@ -72,7 +64,6 @@ const Events = () => {
               title="Daily things often ignored but can end you up being pawned"
               type="Workshop"
               speaker="Viral Parmar"
-              image={data.Event_1.childImageSharp.fluid}
               speakerImage={data.grace.childImageSharp.fluid}
               description="Cybersecurity is important because it encompasses everything that pertains to protecting our sensitive data, personally identifiable information (PII), protected health information (PHI), personal information, intellectual property, data, and governmental and industry information systems from theft and damage attempted. Find out more from our expert."
               schedule="1 OCT 2020, 11:30 AM - 12:30 PM"
@@ -83,7 +74,6 @@ const Events = () => {
               title="How to make the right products to win at a Hackathon"
               type="Talk"
               speaker="Gaurav Rai"
-              image={data.Event_1.childImageSharp.fluid}
               speakerImage={data.gaurav.childImageSharp.fluid}
               description="How To Make the Right Products to Win at a Hackathon
               Hackathons are proving grounds for new ideas. They also provide a platform to push a developer to put forth their best creative and problem-solving skills while also considering time constraints. Hackathons are the new best way to showcase one’s technical skills. Learn about how to build products for a hackathon in this session."
@@ -95,7 +85,6 @@ const Events = () => {
               title="Intro to Prototyping with Figma"
               type="Workshop"
               speaker="Musthaq Ahamad"
-              image={data.Event_1.childImageSharp.fluid}
               speakerImage={data.musthak.childImageSharp.fluid}
               description="Figma is a web-first, collaborative, and powerful vector design tool. It's arguably the best tool in the design industry used to design wireframes and prototypes. In this workshop, we'll learn the basics, learn how to create design systems and build a full-fledged prototype using Figma."
               schedule="2 OCT 2020, 11:30AM - 12:30 PM"
@@ -106,7 +95,6 @@ const Events = () => {
               title="How To Make the Right Products to Win at a Hackathon"
               type="Talk"
               speaker="Rumaan Khalander"
-              image={data.Event_1.childImageSharp.fluid}
               speakerImage={data.rumaan.childImageSharp.fluid}
               description="How To Make the Right Products to Win at a Hackathon
               Hackathons are proving grounds for new ideas. They also provide a platform to push a developer to put forth their best creative and problem-solving skills while also considering time constraints. Hackathons are the new best way to showcase one’s technical skills. Learn about how to build products for a hackathon in this session."
@@ -120,7 +108,6 @@ const Events = () => {
 }
 
 const EventCard = ({
-  image,
   description,
   speaker,
   speakerImage,
@@ -129,29 +116,18 @@ const EventCard = ({
   title,
 }) => {
   return (
-    <div className="Event-card">
-      <div className="Event-card-base">
-        <div className="Event-card-base-left"></div>
-        <div className="Event-card-base-right">
-          <Img className="" fluid={image} alt="speakers" />
-        </div>
-
-        <div className="Event-card-base-content">
-          <p className="event-type">{type}</p>
-          <p className="event-title">{title}</p>
-          <p className="event-time">{schedule}</p>
-          <div className="event-details">
-            <div className="event-details-info">{description}</div>
-            <div className="event-details-speaker">
-              <Img
-                className="event-details-speaker-image"
-                fluid={speakerImage}
-                alt="speakers"
-              />
-              <h3 className="event-details-speaker-name">{speaker}</h3>
-            </div>
-          </div>
-        </div>
+    <div className="event-card">
+      <p className="event-card__event-type">{type}</p>
+      <p className="event-card__event-title">{title}</p>
+      <p className="event-card__event-time">{schedule}</p>
+      <div className="event-card__description">{description}</div>
+      <div className="event-card__speaker">
+        <Img
+          className="event-card__speaker-image"
+          fluid={speakerImage}
+          alt="speakers"
+        />
+        <h3 className="event-card__speaker-name">{speaker}</h3>
       </div>
     </div>
   )
