@@ -2,6 +2,7 @@ import React from "react"
 import Container from "../container"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import ScrollAnimation from "react-animate-on-scroll"
 
 //icons
 import Github from "../../images/github.svg"
@@ -9,25 +10,24 @@ import Linkedin from "../../images/linkedin.svg"
 import Website from "../../images/link.svg"
 
 const Speakers = () => {
-
   const data = useStaticQuery(graphql`
-  query {
-    musthak: file(relativePath: { eq: "speakers/Musthak.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
+    query {
+      musthak: file(relativePath: { eq: "speakers/Musthak.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      rose: file(relativePath: { eq: "speakers/halfRose.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
-    rose: file(relativePath: { eq: "speakers/halfRose.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`)
+  `)
 
   return (
     <section className="speakers">
@@ -46,7 +46,7 @@ const Speakers = () => {
           image={data.musthak.childImageSharp.fluid}
           speakerName="Viral Parmar"
           subTitle="Founder and CEO, ComExpo Cyber Security Foundation"
-          description="Viral Parmar started the world's biggest privacy awareness campaign named &quot;Logout&quot; and has influenced more than 1 million people across the globe. He is famous for his research on &quot;Cyber Disorder&quot; and &quot;Who is Spying on You&quot;. He has been working as Reps and Mentor in Mozilla Open Leadership Project for the past 3 years."
+          description='Viral Parmar started the world&apos;s biggest privacy awareness campaign named "Logout" and has influenced more than 1 million people across the globe. He is famous for his research on "Cyber Disorder" and "Who is Spying on You". He has been working as Reps and Mentor in Mozilla Open Leadership Project for the past 3 years.'
           git="https://github.com/haxzie"
           linkedin="https://www.linkedin.com/in/viral-parmar-8402a04a"
           website="https://haxzie.com/"
@@ -74,36 +74,61 @@ const Speakers = () => {
   )
 }
 
-const SpeakerCard = ({ image, speakerName, subTitle, description, git, linkedin, website }) => {
+const SpeakerCard = ({
+  image,
+  speakerName,
+  subTitle,
+  description,
+  git,
+  linkedin,
+  website,
+}) => {
   return (
-    <div className="speakercard">
-      <div className="speakercard__left">
-        <Img className="speakercard__left-image" fluid={image} alt="speakers" />
-        <h2 className="speakercard__left-title">{speakerName}</h2>
-        <h3 className="speakercard__left-subtitle">{subTitle}</h3>
-      </div>
-      <div className="speakercard__right">
-        <h3 className="speakercard__right-title">About</h3>
-        <h3 className="speakercard__right-description">{description}</h3>
+    <ScrollAnimation animateIn="fadeIn">
+      <div className="speakercard">
+        <div className="speakercard__left">
+          <Img
+            className="speakercard__left-image"
+            fluid={image}
+            alt="speakers"
+          />
+          <h2 className="speakercard__left-title">{speakerName}</h2>
+          <h3 className="speakercard__left-subtitle">{subTitle}</h3>
+        </div>
+        <div className="speakercard__right">
+          <h3 className="speakercard__right-title">About</h3>
+          <h3 className="speakercard__right-description">{description}</h3>
 
-        <div className="speakercard__right__link">
-          <div className="card__right__link-left">
-            <a target="_blank"
-              rel="noreferrer"
-              href={git}><img className="speakercard__right__link-left-github" src={Github} alt="github logo" /></a>
-            <a target="_blank"
-              rel="noreferrer"
-              href={linkedin}><img className="speakercard__right__link-left-image" src={Linkedin} alt="linkedin logo" /></a>
-          </div>
-          <div className="card__right__link-right">
-            <a target="_blank"
-              rel="noreferrer"
-              href={website}><img className="speakercard__right__link-left-image" src={Website} alt="website logo" /></a>
+          <div className="speakercard__right__link">
+            <div className="card__right__link-left">
+              <a target="_blank" rel="noreferrer" href={git}>
+                <img
+                  className="speakercard__right__link-left-github"
+                  src={Github}
+                  alt="github logo"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href={linkedin}>
+                <img
+                  className="speakercard__right__link-left-image"
+                  src={Linkedin}
+                  alt="linkedin logo"
+                />
+              </a>
+            </div>
+            <div className="card__right__link-right">
+              <a target="_blank" rel="noreferrer" href={website}>
+                <img
+                  className="speakercard__right__link-left-image"
+                  src={Website}
+                  alt="website logo"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div >
-
+    </ScrollAnimation>
   )
 }
 
