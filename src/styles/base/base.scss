@@ -1,33 +1,35 @@
 *,
 *::after,
 *::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    // This defines what 1rem is  
-    font-size: 62.5%; // 1rem = 10px    10px/16px = 62.5%
+  // This defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px    10px/16px = 62.5%
 
-    @include respond(tab-land) { //width < 1200?
-        font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25% 
-    }
+  @include respond(tab-land) {
+    //width < 1200?
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+  }
 
-    @include respond(tab-port) { //width < 900?
-        font-size: 50%; // 1rem = 8px, 8/16 = 50% 
-    }
+  @include respond(tab-port) {
+    //width < 900?
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
 
-    @include respond(big-desktop) {
-        font-size: 75%; // 1rem = 12px, 12/16 = 75%
-    }
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px, 12/16 = 75%
+  }
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    counter-reset: section;
-    background-color:$color-background;
+  padding: 0;
+  margin: 0;
+  counter-reset: section;
+  background-color: $color-background;
 }
 
 .container {
@@ -39,6 +41,6 @@ body {
   margin: 0 auto;
 
   @include respond(phone) {
-      width: 90%;
+    width: 90%;
   }
 }
