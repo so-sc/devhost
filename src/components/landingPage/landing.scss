@@ -24,13 +24,12 @@
       justify-content: center;
       &-title {
         p {
-          font-size: 7rem;
+          font-size: 8rem;
           font-family: "Gilmer-heavy", sans-serif;
 
           @include respond(phone) {
-            font-size: 5rem;
+            font-size: 6rem;
           }
-
           @include respond(small-phone) {
             font-size: 4rem;
           }
@@ -42,12 +41,12 @@
       }
       &-tagline {
         p {
-          font-size: 4rem;
+          font-size: 3.5rem;
           font-family: $font-OS;
           font-weight: 600;
 
           @include respond(phone) {
-            font-size: 3rem;
+            font-size: 2.5rem;
           }
           @include respond(small-phone) {
             font-size: 2rem;

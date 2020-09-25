@@ -52,19 +52,11 @@
     margin-bottom: 50px;
   }
 
-  @include respond(phone) {
-    min-height: 280px;
-    max-height: 280px;
-    min-width: 230px;
-    max-width: 230px;
-    margin-bottom: 80px;
-  }
-
   @include respond(small-phone) {
     min-height: 280px;
     max-height: 280px;
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 210px;
+    max-width: 210px;
     margin-bottom: 80px;
   }
 

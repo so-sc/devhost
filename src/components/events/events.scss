@@ -20,7 +20,7 @@
   border-radius: 5px;
 
   @include respond(phone) {
-    padding: 1.5rem;
+    padding: 3rem 2rem;
   }
 
   &__event-type {
