@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const Landing = () => {
   const data = useStaticQuery(graphql`
@@ -26,15 +27,21 @@ const Landing = () => {
         <div className="landing-section-overlay">
           <div className="landing-content">
             <div className="landing-content-title">
-              <p>
-                dev<span>host</span> : 20
-              </p>
+              <ScrollAnimation animateIn="fadeIn">
+                <p>
+                  dev<span>host</span> : 20
+                </p>
+              </ScrollAnimation>
             </div>
             <div className="landing-content-tagline">
-              <p>May the source be with you</p>
+              <ScrollAnimation animateIn="fadeIn">
+                <p>May the source be with you</p>
+              </ScrollAnimation>
             </div>
             <div className="landing-content-dates">
-              <p>October 01 - October 02</p>
+              <ScrollAnimation animateIn="fadeIn">
+                <p>October 01 - October 02</p>
+              </ScrollAnimation>
             </div>
             <div className="landing-content-button">
               <a
