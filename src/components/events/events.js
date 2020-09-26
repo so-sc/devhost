@@ -42,6 +42,13 @@ const Events = () => {
           }
         }
       }
+      VP: file(relativePath: { eq: "speakers/speaker.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -64,7 +71,7 @@ const Events = () => {
               title="Daily things often ignored but can end you up being pawned"
               type="Workshop"
               speaker="Viral Parmar"
-              speakerImage={data.grace.childImageSharp.fluid}
+              speakerImage={data.VP.childImageSharp.fluid}
               description="Cybersecurity is important because it encompasses everything that pertains to protecting our sensitive data, personally identifiable information (PII), protected health information (PHI), personal information, intellectual property, data, and governmental and industry information systems from theft and damage attempted. Find out more from our expert."
               schedule="1 OCT 2020, 11:30 AM - 12:30 PM"
             />
@@ -92,12 +99,12 @@ const Events = () => {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
             <EventCard
-              title="How To Make the Right Products to Win at a Hackathon"
+              title="Jazz Up your Websites with CSS"
               type="Talk"
               speaker="Rumaan Khalander"
               speakerImage={data.rumaan.childImageSharp.fluid}
-              description="How To Make the Right Products to Win at a Hackathon
-              Hackathons are proving grounds for new ideas. They also provide a platform to push a developer to put forth their best creative and problem-solving skills while also considering time constraints. Hackathons are the new best way to showcase one’s technical skills. Learn about how to build products for a hackathon in this session."
+              description="Your website can speak volumes just through its design. That’s where CSS comes into play. While HTML handles your web page's structure, CSS sits on top of HTML's raw structure to dress it up and make everything look pretty. This is why HTML and CSS are foundational to all web design. Learn CSS tips and tricks in this one hour session.
+              "
               schedule="2 OCT 2020, 2:00PM - 3:00 PM"
             />
           </ScrollAnimation>
