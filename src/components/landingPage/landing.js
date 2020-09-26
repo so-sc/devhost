@@ -56,7 +56,7 @@ const Landing = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn_violet-outline"
-                href="https://devfolio.co/"
+                href="https://hacknight.netlify.app/"
               >
                 Explore Hackathon
               </a>

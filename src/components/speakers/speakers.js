@@ -47,6 +47,13 @@ const Speakers = () => {
           }
         }
       }
+      viral_parmar: file(relativePath: { eq: "speakers/speaker.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -59,27 +66,27 @@ const Speakers = () => {
           speakerName="Grace Ling"
           subTitle="UI/UX Designer"
           description="Grace Ling is a Computer Science Engineering student working towards UX product design. She also creates games and works as a freelance designer. Grace has been part of almost 40 speaking engagements on topics related to design and career growth. A few of her notable talks were held at AIGA, Figma, Microsoft and the Pakistan Tech Summit."
-          git="https://github.com/haxzie"
+          git="/"
           linkedin="https://www.linkedin.com/in/graceling/"
           website="https://grace-ling.com/"
         />
         <SpeakerCard
-          image={data.musthak.childImageSharp.fluid}
+          image={data.viral_parmar.childImageSharp.fluid}
           speakerName="Viral Parmar"
           subTitle="Founder and CEO, ComExpo Cyber Security Foundation"
           description='Viral Parmar started the world&apos;s biggest privacy awareness campaign named "Logout" and has influenced more than 1 million people across the globe. He is famous for his research on "Cyber Disorder" and "Who is Spying on You". He has been working as Reps and Mentor in Mozilla Open Leadership Project for the past 3 years.'
-          git="https://github.com/haxzie"
+          git="/"
           linkedin="https://www.linkedin.com/in/viral-parmar-8402a04a"
-          website="https://haxzie.com/"
+          website="/"
         />
         <SpeakerCard
           image={data.gaurav.childImageSharp.fluid}
           speakerName="Gaurav Rai"
           subTitle="Software Developer Engineer"
           description="Gaurav Rai, a software developer engineer at Rivi, is an android and iOS developer who believes in building software that serves a purpose. He graduated from SRM university with a bachelor's degree in Computer Science, where he was the secretary of White Hat hacker' club, and later on, worked as lead Android developer at ALFHEIMR and as a mentor at The Climber."
-          git="https://github.com/haxzie"
+          git="/"
           linkedin="https://www.linkedin.com/"
-          website="https://haxzie.com/"
+          website="/"
         />
         <SpeakerCard
           image={data.musthak.childImageSharp.fluid}
