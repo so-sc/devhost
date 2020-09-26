@@ -92,7 +92,7 @@ const Events = () => {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
             <EventCard
-              title="How To Make the Right Products to Win at a Hackathon"
+              title="Jazz Up your Websites with CSS"
               type="Talk"
               speaker="Rumaan Khalander"
               speakerImage={data.rumaan.childImageSharp.fluid}
