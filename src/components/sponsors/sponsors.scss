@@ -1,6 +1,15 @@
 .sponsors {
   padding: 100px 0;
 
+  &__title {
+    font-family: "Gilmer-medium";
+    color: $color-white;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+    letter-spacing: 0.15rem;
+  }
+
   &__images {
     display: flex;
     align-items: center;

@@ -177,6 +177,16 @@ const Sponsors = () => {
               alt="Staise"
             />
           </a>
+          <a target="_blank" rel="noreferrer" href="https://www.wolfram.com/">
+            <Img
+              className="sponsors__images-size"
+              fluid={data.Wolfram.childImageSharp.fluid}
+              alt="Wolfram Language"
+            />
+          </a>
+        </div>
+        <h1 className="sponsors__title">Official Gifting Partner</h1>
+        <div className="sponsors__images">
           <a
             target="_blank"
             rel="noreferrer"
@@ -187,13 +197,6 @@ const Sponsors = () => {
               className="sponsors__images-size"
               fluid={data.tss.childImageSharp.fluid}
               alt="the Souled Store  "
-            />
-          </a>
-          <a target="_blank" rel="noreferrer" href="https://www.wolfram.com/">
-            <Img
-              className="sponsors__images-size"
-              fluid={data.Wolfram.childImageSharp.fluid}
-              alt="Wolfram Language"
             />
           </a>
         </div>
