@@ -22,19 +22,9 @@ const Header = () => {
                 rel="noreferrer"
                 href="https://github.com/so-sc/code-of-conduct"
               >
-                Community Guidelines
-              </a>
-            </li>
-            <li className="header__container_navigation-item">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/so-sc/code-of-conduct"
-              >
                 Code of Conduct
               </a>
             </li>
-            <li className="header__container_navigation-item">Contact</li>
           </ul>
         </div>
       </Container>
