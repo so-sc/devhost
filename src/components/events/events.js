@@ -63,7 +63,19 @@ const Events = () => {
               speaker="Grace Ling"
               speakerImage={data.grace.childImageSharp.fluid}
               description="User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing usability and the user experience. Learn about this exciting field in this 1 hour insightful session."
-              schedule="1 OCT 2020, 10:05 AM - 11:05 AM"
+              schedule="1 OCT 2020, 11:30 AM - 12:30 PM"
+            />
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="fadeIn">
+            <EventCard
+              title="How to make the right products to win at a Hackathon"
+              type="Talk"
+              speaker="Gaurav Rai"
+              speakerImage={data.gaurav.childImageSharp.fluid}
+              description="
+              Hackathons are proving grounds for new ideas. They also provide a platform to push a developer to put forth their best creative and problem-solving skills while also considering time constraints. Hackathons are the new best way to showcase one’s technical skills. Learn about how to build products for a hackathon in this session."
+              schedule="1 OCT 2020, 2:00 PM - 3:00 PM"
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
@@ -73,18 +85,7 @@ const Events = () => {
               speaker="Viral Parmar"
               speakerImage={data.VP.childImageSharp.fluid}
               description="Cybersecurity is important because it encompasses everything that pertains to protecting our sensitive data, personally identifiable information (PII), protected health information (PHI), personal information, intellectual property, data, and governmental and industry information systems from theft and damage attempted. Find out more from our expert."
-              schedule="1 OCT 2020, 11:30 AM - 12:30 PM"
-            />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
-            <EventCard
-              title="How to make the right products to win at a Hackathon"
-              type="Talk"
-              speaker="Gaurav Rai"
-              speakerImage={data.gaurav.childImageSharp.fluid}
-              description="How To Make the Right Products to Win at a Hackathon
-              Hackathons are proving grounds for new ideas. They also provide a platform to push a developer to put forth their best creative and problem-solving skills while also considering time constraints. Hackathons are the new best way to showcase one’s technical skills. Learn about how to build products for a hackathon in this session."
-              schedule="1 OCT 2020, 2:00PM - 3:00 PM"
+              schedule="2 OCT 2020, 10:00 AM - 11:00 AM"
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
@@ -107,6 +108,7 @@ const Events = () => {
               "
               schedule="2 OCT 2020, 2:00PM - 3:00 PM"
             />
+            w
           </ScrollAnimation>
         </div>
       </Container>
