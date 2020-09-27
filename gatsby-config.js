@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `devhost2020`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `devhost 2020`,
+    description: `devhost is the annual flagship event of SOSC. Our prime goal is to bring young and skilled developers from in and around Karnataka under the same umbrella.`,
+    author: `@sosc`,
+    siteUrl: "https://devhost2020.tech/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,7 +26,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logo_circle.png`, // This path is relative to the root of the site.
+        icon: `src/images/Logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
