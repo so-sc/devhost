@@ -73,7 +73,7 @@ const Events = () => {
               type="Talk"
               speaker="Gaurav Rai"
               speakerImage={data.gaurav.childImageSharp.fluid}
-              description="How To Make the Right Products to Win at a Hackathon
+              description="
               Hackathons are proving grounds for new ideas. They also provide a platform to push a developer to put forth their best creative and problem-solving skills while also considering time constraints. Hackathons are the new best way to showcase one’s technical skills. Learn about how to build products for a hackathon in this session."
               schedule="1 OCT 2020, 2:00 PM - 3:00 PM"
             />
