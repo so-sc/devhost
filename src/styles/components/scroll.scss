@@ -13,10 +13,10 @@
   left: 50%;
   font-size: 40px;
   transform: translate(-50%, -50%);
-  -webkit-animation: bounce 1s ease infinite;
-  animation: bounce 1.5s ease infinite;
+  -webkit-animation: bouncing 1s ease infinite;
+  animation: bouncing 1.5s ease infinite;
 
-  @keyframes bounce {
+  @keyframes bouncing {
     50% {
       transform: translateX(-50%);
     }
