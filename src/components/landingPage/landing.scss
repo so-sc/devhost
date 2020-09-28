@@ -1,6 +1,6 @@
 .landing-section {
   width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
+  height: calc(100 * var(--vh));
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;

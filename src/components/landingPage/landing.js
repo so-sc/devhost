@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import ScrollAnimation from "react-animate-on-scroll"
@@ -18,6 +18,12 @@ const Landing = () => {
     }
   `)
   const imageData = data.desktop.childImageSharp.fluid
+
+  useEffect(() => {
+    let vh = window.innerHeight * 0.01
+
+    document.documentElement.style.setProperty("--vh", `${vh}px`)
+  })
 
   return (
     <section className="landing">
