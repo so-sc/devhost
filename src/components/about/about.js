@@ -14,13 +14,12 @@ const About = () => {
               <a target="_blank" rel="noreferrer" href="https://sosc.org.in/">
                 SOSC
               </a>
-              . Our prime goal is to bring young and skilled developers from in
-              and around Karnataka under the same umbrella. This event aims to
-              create a platform to collaborate with various clubs and
-              organizations, discuss the newest technologies and trends in the
-              IT industry an also train students for the same. devhost:20 claims
-              to be a tech extravaganza, and the biggest event under SOSC so
-              far.
+              . Our prime goal is to bring young and skilled student developers
+              under the same umbrella. This event aims to create a platform to
+              collaborate with various clubs and organizations, discuss the
+              newest technologies and trends in the IT industry an also train
+              students for the same. devhost:20 claims to be a tech
+              extravaganza, and the biggest event under SOSC so far.
               <br />
               <br />
               Considering the ongoing pandemic, devhost:20 will be an online
