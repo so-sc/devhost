@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import ScrollAnimation from "react-animate-on-scroll"
 
+import { FaAngleDown } from "react-icons/fa"
+
 const Landing = () => {
   const data = useStaticQuery(graphql`
     query aboutQuery {
@@ -62,7 +64,7 @@ const Landing = () => {
               </a>
             </div>
             <div className="scroll__container">
-              <div className="scroll animated fadeInUp"></div>
+              <FaAngleDown className="scroll-indicator" />
             </div>
           </div>
         </div>
