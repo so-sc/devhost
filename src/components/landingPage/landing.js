@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import ScrollAnimation from "react-animate-on-scroll"
@@ -19,11 +19,9 @@ const Landing = () => {
   `)
   const imageData = data.desktop.childImageSharp.fluid
 
-  useEffect(() => {
-    let vh = window.innerHeight * 0.01
+  let vh = window.innerHeight * 0.01
 
-    document.documentElement.style.setProperty("--vh", `${vh}px`)
-  })
+  document.documentElement.style.setProperty("--vh", `${vh}px`)
 
   return (
     <section className="landing">
@@ -35,11 +33,9 @@ const Landing = () => {
         <div className="landing-section-overlay">
           <div className="landing-content">
             <div className="landing-content-title">
-              <ScrollAnimation animateIn="fadeIn">
-                <p>
-                  dev<span>host</span> : 20
-                </p>
-              </ScrollAnimation>
+              <p>
+                dev<span>host</span> : 20
+              </p>
             </div>
             <div className="landing-content-tagline">
               <ScrollAnimation animateIn="fadeIn">
