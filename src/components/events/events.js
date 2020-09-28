@@ -108,7 +108,6 @@ const Events = () => {
               "
               schedule="2 OCT 2020, 2:00PM - 3:00 PM"
             />
-            w
           </ScrollAnimation>
         </div>
       </Container>

@@ -61,6 +61,9 @@ const Landing = () => {
                 Explore Hackathon
               </a>
             </div>
+            <div className="scroll__container">
+              <div className="scroll animated fadeInUp"></div>
+            </div>
           </div>
         </div>
       </BackgroundImage>

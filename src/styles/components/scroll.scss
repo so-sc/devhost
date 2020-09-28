@@ -1,0 +1,45 @@
+.scroll {
+  height: $size;
+  width: $size * 0.6;
+  border-radius: $size;
+  border: $size/22 solid $color-white;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: calc(50% - #{$size} / 20);
+    top: $size/5;
+    height: $size/10;
+    width: $size/10;
+    background: $color-white;
+    border-radius: 50%;
+    animation: scroll 4s infinite;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY($size/4);
+  }
+}
+
+.scroll__container {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 50px;
+  @include respond(phone) {
+    bottom: 25px;
+  }
+}
