@@ -19,10 +19,6 @@ const Landing = () => {
   `)
   const imageData = data.desktop.childImageSharp.fluid
 
-  let vh = window.innerHeight * 0.01
-
-  document.documentElement.style.setProperty("--vh", `${vh}px`)
-
   return (
     <section className="landing">
       <BackgroundImage
@@ -33,9 +29,11 @@ const Landing = () => {
         <div className="landing-section-overlay">
           <div className="landing-content">
             <div className="landing-content-title">
-              <p>
-                dev<span>host</span> : 20
-              </p>
+              <ScrollAnimation animateIn="fadeIn">
+                <p>
+                  dev<span>host</span> : 20
+                </p>
+              </ScrollAnimation>
             </div>
             <div className="landing-content-tagline">
               <ScrollAnimation animateIn="fadeIn">
