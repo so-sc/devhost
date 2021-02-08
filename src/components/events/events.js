@@ -63,7 +63,7 @@ const Events = () => {
               speaker="Grace Ling"
               speakerImage={data.grace.childImageSharp.fluid}
               description="User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing usability and the user experience. Learn about this exciting field in this 1 hour insightful session."
-              schedule="1 OCT 2020, 11:30 AM - 12:30 PM"
+              schedule="Coming Soon"
             />
           </ScrollAnimation>
 
@@ -75,7 +75,7 @@ const Events = () => {
               speakerImage={data.gaurav.childImageSharp.fluid}
               description="
               Hackathons are proving grounds for new ideas. They also provide a platform to push a developer to put forth their best creative and problem-solving skills while also considering time constraints. Hackathons are the new best way to showcase one’s technical skills. Learn about how to build products for a hackathon in this session."
-              schedule="1 OCT 2020, 2:00 PM - 3:00 PM"
+              schedule="Coming Soon"
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
@@ -85,7 +85,7 @@ const Events = () => {
               speaker="Viral Parmar"
               speakerImage={data.VP.childImageSharp.fluid}
               description="Cybersecurity is important because it encompasses everything that pertains to protecting our sensitive data, personally identifiable information (PII), protected health information (PHI), personal information, intellectual property, data, and governmental and industry information systems from theft and damage attempted. Find out more from our expert."
-              schedule="2 OCT 2020, 10:00 AM - 11:00 AM"
+              schedule="Coming Soon"
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
@@ -95,7 +95,7 @@ const Events = () => {
               speaker="Musthaq Ahamad"
               speakerImage={data.musthak.childImageSharp.fluid}
               description="Figma is a web-first, collaborative, and powerful vector design tool. It's arguably the best tool in the design industry used to design wireframes and prototypes. In this workshop, we'll learn the basics, learn how to create design systems and build a full-fledged prototype using Figma."
-              schedule="2 OCT 2020, 11:30AM - 12:30 PM"
+              schedule="Coming Soon"
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
@@ -106,7 +106,7 @@ const Events = () => {
               speakerImage={data.rumaan.childImageSharp.fluid}
               description="Your website can speak volumes just through its design. That’s where CSS comes into play. While HTML handles your web page's structure, CSS sits on top of HTML's raw structure to dress it up and make everything look pretty. This is why HTML and CSS are foundational to all web design. Learn CSS tips and tricks in this one hour session.
               "
-              schedule="2 OCT 2020, 2:00PM - 3:00 PM"
+              schedule="Coming Soon"
             />
           </ScrollAnimation>
         </div>

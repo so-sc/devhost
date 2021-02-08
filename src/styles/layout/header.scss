@@ -26,6 +26,8 @@ header {
       }
 
       &-devhost {
+        width: 80%;
+        padding: 2rem 0;
         @include respond(tab-port) {
           width: 75%;
         }

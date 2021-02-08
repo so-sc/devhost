@@ -23,7 +23,7 @@ const About = () => {
               far.
               <br />
               <br />
-              Considering the ongoing pandemic, devhost:20 will be an online
+              Considering the ongoing pandemic, devhost:21 will be an online
               event.
             </p>
           </div>

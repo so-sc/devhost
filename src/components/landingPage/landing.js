@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import ScrollAnimation from "react-animate-on-scroll"
+import { Link } from "gatsby"
 
 import { FaAngleDown } from "react-icons/fa"
 
@@ -31,7 +32,7 @@ const Landing = () => {
             <div className="landing-content-title">
               <ScrollAnimation animateIn="fadeIn">
                 <p>
-                  dev<span>host</span> : 20
+                  dev<span>host</span> : 21
                 </p>
               </ScrollAnimation>
             </div>
@@ -42,26 +43,17 @@ const Landing = () => {
             </div>
             <div className="landing-content-dates">
               <ScrollAnimation animateIn="fadeIn">
-                <p>October 01 - October 02</p>
+                <p>Coming Soon!</p>
               </ScrollAnimation>
             </div>
             <div className="landing-content-button">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn_violet"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSd2-AID4jmYyNQQvFHHNd2fcMuxfZ-fo2McHbx_4__jbYpWYQ/viewform"
-              >
+              <Link to="/" className="btn btn_violet">
                 Register Now
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn_violet-outline"
-                href="https://hacknight.netlify.app/"
-              >
+              </Link>
+
+              <Link to="/" className="btn btn_violet-outline">
                 Explore Hackathon
-              </a>
+              </Link>
             </div>
             <div className="scroll__container">
               <FaAngleDown className="scroll-indicator" />
