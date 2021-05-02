@@ -43,11 +43,8 @@ const About = () => {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
             <InfoCard
-              cardHeading="Hacktoberfest Hacknight"
-              cardInfo={`Hack Night is a 28-hour long hackathon organized by Sahyadri Open Source Community (SOSC) 
-              in celebration of Hacktoberfest 2020. Hacktoberfest is open to everyone in our global community.
-                            
-              `}
+              cardHeading="Exciting Ice Breakers"
+              cardInfo={`Answer questions that test your knowledge of things both practical and ridiculously random, then a virtual trivia could be just what your social (distancing) life needs. Opportunities for participants to win exciting prizes.`}
             />
           </ScrollAnimation>
         </div>

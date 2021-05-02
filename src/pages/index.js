@@ -10,7 +10,7 @@ import About from "../components/about/about"
 import Speakers from "../components/speakers/speakers"
 import Events from "../components/events/events"
 import Association from "../components/association/association"
-import Sponsors from "../components/sponsors/sponsors"
+// import Sponsors from "../components/sponsors/sponsors"
 
 const IndexPage = () => {
   return (
@@ -26,7 +26,7 @@ const IndexPage = () => {
       <Events />
       <Speakers />
       <Association />
-      <Sponsors />
+      {/* <Sponsors /> */}
     </Layout>
   )
 }
