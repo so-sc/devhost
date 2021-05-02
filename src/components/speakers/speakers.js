@@ -12,42 +12,28 @@ import Website from "../../images/link.svg"
 const Speakers = () => {
   const data = useStaticQuery(graphql`
     query {
-      musthak: file(relativePath: { eq: "speakers/Musthak.jpg" }) {
+      madhu: file(relativePath: { eq: "speakers/madhu-akula.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      rose: file(relativePath: { eq: "speakers/halfRose.jpg" }) {
+      sid: file(relativePath: { eq: "speakers/sidhant-agarwal.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      grace: file(relativePath: { eq: "speakers/grace-ling.png" }) {
+      sam: file(relativePath: { eq: "speakers/sam-poder.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      gaurav: file(relativePath: { eq: "speakers/gaurav-rai.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      rumaan: file(relativePath: { eq: "speakers/rumaan.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      viral_parmar: file(relativePath: { eq: "speakers/speaker.jpeg" }) {
+      siddharth: file(relativePath: { eq: "speakers/siddharth-dayalwal.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -62,49 +48,49 @@ const Speakers = () => {
       <Container>
         <h3 className="section__title">Speakers</h3>
         <SpeakerCard
-          image={data.grace.childImageSharp.fluid}
-          speakerName="Grace Ling"
-          subTitle="UI/UX Designer"
-          description="Grace Ling is a Computer Science Engineering student working towards UX product design. She also creates games and works as a freelance designer. Grace has been part of almost 40 speaking engagements on topics related to design and career growth. A few of her notable talks were held at AIGA, Figma, Microsoft and the Pakistan Tech Summit."
+          image={data.madhu.childImageSharp.fluid}
+          speakerName="Madhu Akula"
+          subTitle="Creator of Kubernetes Goat"
+          description="Madhu Akula is the creator of Kubernetes Goat. He is also a  published author and cloud native security researcher. He is an active member of international security, devops and cloud native communities. He frequently speaks and runs training sessions at security events and conferences around the world including DEFCON, BlackHat USA, USENIX LISA, O’Reilly Velocity, GitHub Satellite event, Appsec EU, All Day DevOps, DevSecCon and multiple others. He is also the co-author of Security Automation with Ansible2 which is listed as a technical resource by Red Hat Ansible."
           git="/"
-          linkedin="https://www.linkedin.com/in/graceling/"
-          website="https://grace-ling.com/"
+          linkedin="https://www.linkedin.com/in/madhuakula/"
+          website="https://madhuakula.com/"
         />
         <SpeakerCard
-          image={data.viral_parmar.childImageSharp.fluid}
-          speakerName="Viral Parmar"
-          subTitle="Founder and CEO, ComExpo Cyber Security Foundation"
-          description='Viral Parmar started the world&apos;s biggest privacy awareness campaign named "Logout" and has influenced more than 1 million people across the globe. He is famous for his research on "Cyber Disorder" and "Who is Spying on You". He has been working as Reps and Mentor in Mozilla Open Leadership Project for the past 3 years.'
+          image={data.sid.childImageSharp.fluid}
+          speakerName="Siddhant Agarwal"
+          subTitle="Program coordinator at Google India"
+          description='Siddhant, aka Sid is a program coordinator at Google, India. He is also an ACM’s distinguished speaker and an Intel software innovator. He is an avid public speaker, he has spoken at more than 200+ national and international forums impacting more than 50K individuals in the last 4-5 years. He loves working with startups and helping them scale in UX and improve their designs.'
           git="/"
-          linkedin="https://www.linkedin.com/in/viral-parmar-8402a04a"
+          linkedin="https://www.linkedin.com/in/sidagarwal04/"
+          website="https://about.me/siddhantagarwal/"
+        />
+        <SpeakerCard
+          image={data.sam.childImageSharp.fluid}
+          speakerName="Sam Poder"
+          subTitle="Hackclub Lead, Founder of the Singapore STEM Club"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et dignissim purus. Praesent dictum, lectus suscipit ultrices ultrices, justo est mollis nulla, vel interdum diam magna eu nulla. Pellentesque scelerisque, purus ac facilisis pharetra, mi magna molestie diam, a dictum metus massa at nunc. Fusce porta est orci, eget dapibus elit dignissim id." 
+          git="https://github.com/sampoder/"
+          linkedin="/"
+          website="https://sampoder.com"
+        />
+        <SpeakerCard
+          image={data.siddharth.childImageSharp.fluid}
+          speakerName="Siddharth Dayalwal"
+          subTitle="Community Development Intern at SAWO labs"
+          description="Siddharth Dayalwal is a Community Development Intern at SAWO labs,GitHub Campus Expert ,Microsoft Learn Student Ambassador, AngelHack Student Ambassador,Coding Blocks ~ HackerEarth Ambassador and Former Progate Community Intern."
+          git="/"
+          linkedin="/"
           website="/"
         />
         <SpeakerCard
-          image={data.gaurav.childImageSharp.fluid}
-          speakerName="Gaurav Rai"
-          subTitle="Software Developer Engineer"
-          description="Gaurav Rai, a software developer engineer at Rivi, is an android and iOS developer who believes in building software that serves a purpose. He graduated from SRM university with a bachelor's degree in Computer Science, where he was the secretary of White Hat hacker' club, and later on, worked as lead Android developer at ALFHEIMR and as a mentor at The Climber."
+          image={data.siddharth.childImageSharp.fluid}
+          speakerName="SUPER SENIOR"
+          subTitle="Community Development Intern at SAWO labs"
+          description="Siddharth Dayalwal is a Community Development Intern at SAWO labs,GitHub Campus Expert ,Microsoft Learn Student Ambassador, AngelHack Student Ambassador,Coding Blocks ~ HackerEarth Ambassador and Former Progate Community Intern."
           git="/"
-          linkedin="https://www.linkedin.com/"
+          linkedin="/"
           website="/"
-        />
-        <SpeakerCard
-          image={data.musthak.childImageSharp.fluid}
-          speakerName="Musthaq Ahamad"
-          subTitle="UX Engineer and Visual Designer"
-          description="Musthaq Ahamad, a UX Engineer and Visual Designer at Locale.ai, is an open-source enthusiast with an eye for detail.  He advocates, designs and builds for the web. He is one of SOSC’s alumni, an ex GitHubEducation Campus Expert, and a mentor to many in the community. He has conducted various workshops and talks on Git and GitHub, Nodeschool and GeoSpatial Analytics Tools, to name a few."
-          git="https://github.com/haxzie"
-          linkedin="https://linkedin.com/in/haxzie"
-          website="https://haxzie.com/"
-        />
-        <SpeakerCard
-          image={data.rumaan.childImageSharp.fluid}
-          speakerName="Rumaan Khalander"
-          subTitle="Technical Head at iDeotic"
-          description="Rumaan Khalander is the Technical Lead at iDeotic, a start-up that strives towards ensuring that different technologies have a human touch as a core element. He is a passionate mobile and web app developer with a keen interest in designing and developing beautiful UIs. He is one of SOSC’s alumni and a mentor to many in the community."
-          git="https://github.com/rumaan"
-          linkedin="https://www.linkedin.com/in/rumaan"
-          website="https://rumaan.tech/"
         />
       </Container>
     </section>
