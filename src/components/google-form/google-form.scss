@@ -1,5 +1,17 @@
 .google-form{
-    padding-top: 100px;
+    // padding-top: 100px;
     display: flex;
     justify-content: center;
+}
+
+.registration-section{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-to-home-button{
+    padding-bottom: 15px;
+    // width: 100%;
 }

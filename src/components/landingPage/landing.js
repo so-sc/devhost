@@ -47,7 +47,7 @@ const Landing = () => {
               </ScrollAnimation>
             </div>
             <div className="landing-content-button">
-              <Link to="/registration" className="btn btn_violet">
+              <Link to="/registration" className="btn btn_violet-outline">
                 Register Now
               </Link>
             </div>
