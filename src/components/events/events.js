@@ -56,12 +56,12 @@ const Events = () => {
 
           <ScrollAnimation animateIn="fadeIn">
             <EventCard
-              title="How to make the right products to win at a Hackathon"
+              title="Getting started your journey into Cloud Security"
               type="Talk"
               speaker="Madhu Akula"
               speakerImage={data.madhu.childImageSharp.fluid}
               description="
-              Hackathons are proving grounds for new ideas. They also provide a platform to push a developer to put forth their best creative and problem-solving skills while also considering time constraints. Hackathons are the new best way to showcase one’s technical skills. Learn about how to build products for a hackathon in this session."
+              Most organizations in one way or another already using cloud services to run their workloads. In this session, we will see how we can learn to get started our journey with Cloud Security by understanding the fundamentals of working with the cloud, and the pathway. Madhu will share his getting started approaches from his experience to learn and practice using online resources and references. By the end of the session, the audience will get enough resources and references to go deep dive into building their knowledge by practicing and learning further."
               schedule="Coming Soon"
             />
           </ScrollAnimation>
