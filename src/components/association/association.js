@@ -72,6 +72,13 @@ const Association = () => {
             }
         }
     }
+    ccscem: file(relativePath: { eq: "association/ccscem.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+            }
+        }
+    }
   }
 `)
 
@@ -90,6 +97,7 @@ const Association = () => {
           <Img className="association__images-size" fluid={data.wtm.childImageSharp.fluid} alt="Women Tech Maker" />
           <Img className="association__images-size" fluid={data.dsc.childImageSharp.fluid} alt="Developer Student Clubs" />
           <Img className="association__images-size" fluid={data.gwc.childImageSharp.fluid} alt="Girls Who Code" />
+          <Img className="association__images-size" fluid={data.ccscem.childImageSharp.fluid} alt="Girls Who Code" />
         </div>
       </Container>
     </section>
