@@ -40,6 +40,13 @@ const Speakers = () => {
           }
         }
       }
+      jehad: file(relativePath: { eq: "speakers/jehad.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -69,7 +76,7 @@ const Speakers = () => {
           image={data.sam.childImageSharp.fluid}
           speakerName="Sam Poder"
           subTitle="Hackclub Lead, Founder of the Singapore STEM Club"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et dignissim purus. Praesent dictum, lectus suscipit ultrices ultrices, justo est mollis nulla, vel interdum diam magna eu nulla. Pellentesque scelerisque, purus ac facilisis pharetra, mi magna molestie diam, a dictum metus massa at nunc. Fusce porta est orci, eget dapibus elit dignissim id." 
+          description="Sam Poder, is smart 9th grader who is also a Hackclub Lead and the founder of the Singapore STEM Club. He is a talented JavaScript wizard with great experience in various JS libraries and the language itself. He has hosted an interactive sound festival using a massive system of NodeMCUs, a web app, python scripts, an API and groovy Sonic Pi etc." 
           git="https://github.com/sampoder/"
           linkedin="/"
           website="https://sampoder.com"
@@ -81,16 +88,16 @@ const Speakers = () => {
           description="Siddharth Dayalwal is a Community Development Intern at SAWO labs,GitHub Campus Expert ,Microsoft Learn Student Ambassador, AngelHack Student Ambassador,Coding Blocks ~ HackerEarth Ambassador and Former Progate Community Intern."
           git="/"
           linkedin="/"
-          website="/"
+          website="https://www.instagram.com/siddharth_hacks/"
         />
         <SpeakerCard
-          image={data.siddharth.childImageSharp.fluid}
-          speakerName="SUPER SENIOR"
-          subTitle="Community Development Intern at SAWO labs"
-          description="Siddharth Dayalwal is a Community Development Intern at SAWO labs,GitHub Campus Expert ,Microsoft Learn Student Ambassador, AngelHack Student Ambassador,Coding Blocks ~ HackerEarth Ambassador and Former Progate Community Intern."
+          image={data.jehad.childImageSharp.fluid}
+          speakerName="Jehad Mohamed"
+          subTitle="UI/UX Designer at MobStac"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada mi eget congue eleifend. Aenean gravida eu ligula eu lobortis. Phasellus velit velit, lacinia ultrices dolor at, scelerisque imperdiet libero. Integer sed diam at est dictum euismod. Quisque id odio sed tortor accumsan aliquam aliquam at nunc. Donec vestibulum finibus condimentum."
           git="/"
           linkedin="/"
-          website="/"
+          website="https://jehadmohamedz.wixsite.com/meep/"
         />
       </Container>
     </section>

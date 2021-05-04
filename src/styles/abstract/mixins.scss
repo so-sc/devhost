@@ -25,6 +25,11 @@ $breakpoint argument choices:
       @content;
     } //300px
   }
+  @if $breakpoint == med-phone {
+    @media (max-width: 26.25em) {
+      @content;
+    } //420px
+  }
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
       @content;
