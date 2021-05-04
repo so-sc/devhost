@@ -9,9 +9,72 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .back-to-home-button{
-    padding-bottom: 15px;
-    // width: 100%;
+    padding-top: 10px;
 }
+
+iframe{
+    height: 2500px;
+    @include respond(phone) {
+        height: 2700px;
+    }        
+    @include respond(med-phone) {
+        height: 2900px;
+    }
+    @include respond(small-phone) {
+        height: 3000px;
+    }
+}
+
+
+
+// @media only screen and (max-width: 470px) {
+//     iframe {
+//         height: 2700px;
+//     }
+// }
+
+// @media only screen and (max-width: 420px) {
+//     iframe {
+//         height: 2800px;
+//     }
+// }
+
+// @media only screen and (max-width: 370px) {
+//     iframe {
+//         height: 3000px;
+//     }
+// }
+
+
+// @mixin respond($breakpoint) {
+//     @if $breakpoint == small-phone {
+//       @media (max-width: 20em) {
+//         @content;
+//       } //300px
+//     }
+//     @if $breakpoint == phone {
+//       @media (max-width: 37.5em) {
+//         @content;
+//       } //600px
+//     }
+//     @if $breakpoint == tab-port {
+//       @media (max-width: 56.25em) {
+//         @content;
+//       } //900px
+//     }
+//     @if $breakpoint == tab-land {
+//       @media (max-width: 75em) {
+//         @content;
+//       } //1200px
+//     }
+//     @if $breakpoint == big-desktop {
+//       @media (min-width: 112.5em) {
+//         @content;
+//       } //1800px
+//     }
+//   }
+  
