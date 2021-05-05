@@ -12,7 +12,7 @@ const GoogleForm = () => {
 
           <iframe title="devhost-registration-form" 
           src="https://docs.google.com/forms/d/e/1FAIpQLSdv5Zlv6ModjWTqUqXwLaw-DKYP3SuxC5j7XtvD0IZhmOTD4A/viewform?embedded=true" 
-          width="100%"
+          // width="100%"
           // height="2900" height is now in css
           frameBorder="0" 
           marginHeight="0" 
