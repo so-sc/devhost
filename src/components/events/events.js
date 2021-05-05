@@ -61,7 +61,7 @@ const Events = () => {
           <ScrollAnimation animateIn="fadeIn">
             <EventCard
               title="Can Bad Design Kill"
-              type="Workshop"
+              type="Talk"
               speaker="Jehad Mohamed"
               speakerImage={data.jehad.childImageSharp.fluid}
               description="In this session we will be talking about design in general and how it has grown from just being used in niche user apps to more sensitive systems that deal with medicine, digital policing, vehicular systems etc where bad UX can have more impact than just the user getting irritated. Now being a part of every such impactful industry - bad design can have unseen ramifications when it comes to effecting safety and health. We'll discuss what is design- how it has grown, followed by Bad Design and in what spectrum bad design becomes dangerous."
