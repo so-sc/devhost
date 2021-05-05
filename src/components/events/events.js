@@ -97,7 +97,7 @@ const Events = () => {
 
           <ScrollAnimation animateIn="fadeIn">
             <EventCard
-              title="Upskill with hackathon and communities"
+              title="Upskill with Hackathon and Communities"
               type="Talk"
               speaker="Siddhart Dayalwal"
               speakerImage={data.siddharth.childImageSharp.fluid}
