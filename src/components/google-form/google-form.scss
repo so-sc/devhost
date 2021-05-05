@@ -13,19 +13,20 @@
 }
 
 .back-to-home-button{
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 iframe{
-    height: 2500px;
+    width: 100%;
+    height: 2800px;
     @include respond(phone) {
-        height: 2700px;
+        height: 3015px;
     }        
     @include respond(med-phone) {
-        height: 2900px;
+        height: 3300px;
     }
     @include respond(small-phone) {
-        height: 3000px;
+        height: 3500px;
     }
 }
 
