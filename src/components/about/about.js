@@ -37,13 +37,13 @@ const About = () => {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
             <InfoCard
-              cardHeading="Exciting Workshops"
+              cardHeading="Insightful Workshops"
               cardInfo="There’s no better way to master a technical skill than to actually get coding. Come join us in a series of three workshops exploring various domains. The workshops involve hands-on learning along with discussion and interaction on a given topic."
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
             <InfoCard
-              cardHeading="Insightful Ice Breakers"
+              cardHeading="Exciting Ice Breakers"
               cardInfo="A virtual trivia could be just what your social (distancing) life needs. Stand a chance to win exciting prizes by answering questions that test your knowledge on subjects both practical and ridiculously random topics!"
             />
           </ScrollAnimation>

@@ -67,7 +67,7 @@ const Speakers = () => {
           image={data.sid.childImageSharp.fluid}
           speakerName="Siddhant Agarwal"
           subTitle="Program Coordinator at Google India"
-          description='Siddhant, aka Sid is a program coordinator at Google, India. He is also an ACM’s distinguished speaker and an Intel software innovator. He is an avid public speaker, he has spoken at more than 200+ national and international forums impacting more than 50K individuals in the last 4-5 years. He loves working with startups and helping them scale in UX and improve their designs.'
+          description='Siddhant was a program coordinator at Google,India. He is also one of ACM’s distinguished speakers and an Intel SoftwareInnovator. Being an avid public speaker, he has spoken at more than 200+ national and international forums impacting over 50K individuals in the last 4-5 years. He loves working with startups and helping them scale in User Experience and improve their designs.'
           git="https://github.com/sidagarwal04/"
           linkedin="https://www.linkedin.com/in/sidagarwal04/"
           website="https://about.me/siddhantagarwal/"
@@ -76,7 +76,7 @@ const Speakers = () => {
           image={data.sam.childImageSharp.fluid}
           speakerName="Sam Poder"
           subTitle="Hackclub Lead, Founder of the Singapore STEM Club"
-          description="Sam Poder, is smart 9th grader who is also a Hackclub Lead and the founder of the Singapore STEM Club. He is a talented JavaScript wizard with great experience in various JS libraries and the language itself. He has hosted an interactive sound festival using a massive system of NodeMCUs, a web app, python scripts, an API and groovy Sonic Pi etc." 
+          description="Sam Poder is a smart 9th grader who is also a Hackclub Lead and the founder of the Singapore STEM Club. He is a talented JavaScript wizard with great experience in various JS libraries and the language itself. He has hosted an interactive sound festival using a massive system of NodeMCUs, a web app, python scripts, an API and groovy Sonic Pi etc" 
           git="https://github.com/sampoder/"
           linkedin="/"
           website="https://sampoder.com"
