@@ -31,8 +31,8 @@ const About = () => {
         <div className="about-cards">
           <ScrollAnimation animateIn="fadeIn">
             <InfoCard
-              cardHeading="Insightful Talks"
-              cardInfo="Hear what the experts have to share about a wide range of concepts and technologies. Know more about the recent trends, initiatives, innovations and much more. Expand your knowledge and stand a chance to interact with experts from various technical fields"
+              cardHeading="Informative Talks"
+              cardInfo="Hear what the experts have to share about a wide range of concepts and technologies. Know more about the recent trends, initiatives, innovations and much more. Expand your knowledge and stand a chance to interact with experts from various technical fields."
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
@@ -43,8 +43,8 @@ const About = () => {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
             <InfoCard
-              cardHeading="Exciting Ice Breakers"
-              cardInfo={`Answer questions that test your knowledge of things both practical and ridiculously random, then a virtual trivia could be just what your social (distancing) life needs. Opportunities for participants to win exciting prizes.`}
+              cardHeading="Insightful Ice Breakers"
+              cardInfo="A virtual trivia could be just what your social (distancing) life needs. Stand a chance to win exciting prizes by answering questions that test your knowledge on subjects both practical and ridiculously random topics!"
             />
           </ScrollAnimation>
         </div>

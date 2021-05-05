@@ -10,6 +10,7 @@ import About from "../components/about/about"
 import Speakers from "../components/speakers/speakers"
 import Events from "../components/events/events"
 import Association from "../components/association/association"
+import ChiefGuest from "../components/chief-guest/chief-guest"
 // import Sponsors from "../components/sponsors/sponsors"
 
 const IndexPage = () => {
@@ -23,6 +24,7 @@ const IndexPage = () => {
       />
       <Landing />
       <About />
+      <ChiefGuest />
       <Events />
       <Speakers />
       <Association />

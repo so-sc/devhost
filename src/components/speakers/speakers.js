@@ -59,16 +59,16 @@ const Speakers = () => {
           speakerName="Madhu Akula"
           subTitle="Creator of Kubernetes Goat"
           description="Madhu Akula is the creator of Kubernetes Goat. He is also a  published author and cloud native security researcher. He is an active member of international security, devops and cloud native communities. He frequently speaks and runs training sessions at security events and conferences around the world including DEFCON, BlackHat USA, USENIX LISA, O’Reilly Velocity, GitHub Satellite event, Appsec EU, All Day DevOps, DevSecCon and multiple others. He is also the co-author of Security Automation with Ansible2 which is listed as a technical resource by Red Hat Ansible."
-          git="/"
+          git="https://github.com/madhuakula/"
           linkedin="https://www.linkedin.com/in/madhuakula/"
           website="https://madhuakula.com/"
         />
         <SpeakerCard
           image={data.sid.childImageSharp.fluid}
           speakerName="Siddhant Agarwal"
-          subTitle="Program coordinator at Google India"
+          subTitle="Program Coordinator at Google India"
           description='Siddhant, aka Sid is a program coordinator at Google, India. He is also an ACM’s distinguished speaker and an Intel software innovator. He is an avid public speaker, he has spoken at more than 200+ national and international forums impacting more than 50K individuals in the last 4-5 years. He loves working with startups and helping them scale in UX and improve their designs.'
-          git="/"
+          git="https://github.com/sidagarwal04/"
           linkedin="https://www.linkedin.com/in/sidagarwal04/"
           website="https://about.me/siddhantagarwal/"
         />
@@ -94,9 +94,9 @@ const Speakers = () => {
           image={data.jehad.childImageSharp.fluid}
           speakerName="Jehad Mohamed"
           subTitle="UI/UX Designer at MobStac"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada mi eget congue eleifend. Aenean gravida eu ligula eu lobortis. Phasellus velit velit, lacinia ultrices dolor at, scelerisque imperdiet libero. Integer sed diam at est dictum euismod. Quisque id odio sed tortor accumsan aliquam aliquam at nunc. Donec vestibulum finibus condimentum."
+          description="Jehad Mohamed is a Computer Science graduate who has been dabbling with computer vision and the vast domain of design for the past few years and has loved every bit of it. His design journey includes interning at Canva and free lancing for multiple renowned companies, to name a few.  He wants to help build tools that allow non-designers to create beautiful designs."
           git="/"
-          linkedin="/"
+          linkedin="https://in.linkedin.com/in/jehad-ddx/"
           website="https://jehadmohamedz.wixsite.com/meep/"
         />
       </Container>
