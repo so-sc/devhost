@@ -30,7 +30,7 @@ const ChiefGuest = () => {
           image={data.dc.childImageSharp.fluid}
           speakerName="Dr. Rajendra Kumar"
           subTitle="Deputy Commissioner"
-          description="Dr. Rajendra Kumar is a senior officer in the Indian Administrative Service (I.A.S.) and is currently working as the Principal Secretary/Industries Commissioner and Director of Industries and Commerce in the Government of Tamil Nadu. Prior to this, he was the Chairman and Managing Director (CMD) of the Electronics Corporation of Tamil Nadu (ELCOT). As the CMD of ELCOT, he led the ICT infrastructure, e-governance, ICT procurement and IT industry promotion activities within the state. "
+          description="Dr Rajendra hails from Theerthahalli in Shivamogga. After completing MBSS, he had written UPSC and was serving in the Indian Railways. In 2013, he passed the UPSC exam with 32nd rank. He had served as the assistant commissioner of Puttur in 2015."
           // git="/"
           // linkedin="https://www.linkedin.com/in/madhuakula/"
           // website="https://madhuakula.com/"
