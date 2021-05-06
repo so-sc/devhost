@@ -76,7 +76,7 @@ const Events = () => {
               speaker="Madhu Akula"
               speakerImage={data.madhu.childImageSharp.fluid}
               description="Most organizations use cloud services in one way or another to run their workloads. In this session, we will see how we can get started on our journey in the vast domain of Cloud Security. Along with an interesting interaction to instil a deeper understanding of the fundamentals of working with the cloud, Madhu will share his experiences too."
-              schedule="15th May, 12:00 PM - 1:30 PM"
+              schedule="15th May, 12:00 PM - 1:00 PM"
             />
           </ScrollAnimation>
 
