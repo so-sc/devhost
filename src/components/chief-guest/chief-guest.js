@@ -28,8 +28,8 @@ const ChiefGuest = () => {
         <h3 className="section__title">Chief Guest</h3>
         <SpeakerCard
           image={data.dc.childImageSharp.fluid}
-          speakerName="Dr. Rajendra Kumar"
-          subTitle="Deputy Commissioner"
+          speakerName="Dr. Rajendra K. V., IAS"
+          subTitle="Deputy Commissioner, Dakshina Kannada"
           description="Dr Rajendra hails from Theerthahalli in Shivamogga. After completing MBSS, he had written UPSC and was serving in the Indian Railways. In 2013, he passed the UPSC exam with 32nd rank. He had served as the assistant commissioner of Puttur in 2015."
           // git="/"
           // linkedin="https://www.linkedin.com/in/madhuakula/"
