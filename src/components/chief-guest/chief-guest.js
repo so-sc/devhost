@@ -30,7 +30,7 @@ const ChiefGuest = () => {
           image={data.dc.childImageSharp.fluid}
           speakerName="Dr. Rajendra K. V., IAS"
           subTitle="Deputy Commissioner, Dakshina Kannada"
-          description="Dr Rajendra hails from Theerthahalli in Shivamogga. After completing MBBS, he had written UPSC and was serving in the Indian Railways. In 2013, he passed the UPSC exam with 32nd rank. He had served as the assistant commissioner of Puttur in 2015."
+          description="Dr Rajendra hails from Theerthahalli,  Shivamogga. After completing MBBS, he appeared for UPSC and served in the Indian Railways. In 2013, he cleared the UPSC exam with 32nd rank. He then served as the Assistant Commissioner of Puttur in 2015.."
           // git="/"
           // linkedin="https://www.linkedin.com/in/madhuakula/"
           // website="https://madhuakula.com/"
