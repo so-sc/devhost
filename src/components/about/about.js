@@ -38,7 +38,7 @@ const About = () => {
           <ScrollAnimation animateIn="fadeIn">
             <InfoCard
               cardHeading="Insightful Workshops"
-              cardInfo="There’s no better way to master a technical skill than to actually get coding. Come join us in a series of three workshops exploring various domains. The workshops involve hands-on learning along with discussion and interaction on a given topic."
+              cardInfo="There’s no better way to master a technical skill than to actually get coding. Come join us in a series of talks and workshop exploring various domains. The talks and workshop involve hands-on learning along with discussion and interaction on a given topic."
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
