@@ -76,9 +76,9 @@ const Speakers = () => {
           image={data.sam.childImageSharp.fluid}
           speakerName="Sam Poder"
           subTitle="Hackclub Lead, Founder of the Singapore STEM Club"
-          description="Sam Poder is a smart 9th grader who is also a Hackclub Lead and the founder of the Singapore STEM Club. He is a talented JavaScript wizard with great experience in various JS libraries and the language itself. He has hosted an interactive sound festival using a massive system of NodeMCUs, a web app, python scripts, an API and groovy Sonic Pi etc" 
+          description="Sam, a high schooler in Singapore, finds joy in building ✨ jazzy 🌈 media experiences for people to enjoy. He is a massive fan of open source and collaborating with others to make things. In his community, he works hard to introduce students from all backgrounds to technology and support them." 
           git="https://github.com/sampoder/"
-          linkedin="/"
+          linkedin="https://sg.linkedin.com/in/sam-poder"
           website="https://sampoder.com"
         />
         <SpeakerCard
