@@ -120,7 +120,7 @@ const Events = () => {
               speaker="Super Seniors"
               speakerImage={data.sc.childImageSharp.fluid}
               description="Questioning is an integral part of the learning process. As young developers we bet a gazillion questions cross your mind every day. Well, start making note of those very questions and shoot them at our panel of SOSC alumni/alumnae, who shall attempt to help you to the best of their abilities."
-              schedule="16th May, 2:00 PM - 3:00 PM"
+              schedule="16th May, 3:15 PM - 4:15 PM"
             />
           </ScrollAnimation>
         </div>
