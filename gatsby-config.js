@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `devhost 2021`,
-    description: `devhost is the annual flagship event of SOSC. Our prime goal is to bring young and skilled developers from in and around Karnataka under the same umbrella.`,
+    description: `devhost is the annual flagship event of SOSC. Our prime goal is to bring young and skilled developers from anywhere across the globe under the same umbrella.`,
     author: `@sosc`,
     siteUrl: "https://devhost2020.tech/",
   },
