@@ -47,7 +47,7 @@ const Landing = () => {
               </ScrollAnimation>
             </div>
             <div className="landing-content-button">
-              <Link to="https://youtu.be/vC7o2MZBepI" className="btn btn_violet-outline">
+              <Link to="https://youtu.be/j4wDRdo4LOc" className="btn btn_violet-outline">
                 Watch Live Now
               </Link>
             </div>
