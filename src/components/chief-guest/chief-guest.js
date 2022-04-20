@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "../container"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
 
@@ -10,24 +10,21 @@ import ScrollAnimation from "react-animate-on-scroll"
 // import Website from "../../images/link.svg"
 
 const ChiefGuest = () => {
-    const data = useStaticQuery(graphql`
-    query {
-      dc: file(relativePath: { eq: "speakers/dc.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+    const data = useStaticQuery(graphql`{
+  dc: file(relativePath: {eq: "speakers/dc.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 300, layout: CONSTRAINED)
     }
-  `)
+  }
+}
+`)
 
   return (
     <section className="speakers">
       <Container>
         <h3 className="section__title">Chief Guest</h3>
         <SpeakerCard
-          image={data.dc.childImageSharp.fluid}
+          image={data.dc.childImageSharp.gatsbyImageData}
           speakerName="Dr. Rajendra K. V., IAS"
           subTitle="Deputy Commissioner, Dakshina Kannada"
           description="Dr Rajendra hails from Theerthahalli,  Shivamogga. After completing MBBS, he appeared for UPSC and served in the Indian Railways. In 2013, he cleared the UPSC exam with 32nd rank. He then served as the Assistant Commissioner of Puttur in 2015.."
@@ -37,7 +34,7 @@ const ChiefGuest = () => {
         />
       </Container>
     </section>
-  )
+  );
 }
 
 const SpeakerCard = ({
@@ -53,11 +50,7 @@ const SpeakerCard = ({
     <ScrollAnimation animateIn="fadeIn">
       <div className="speakercard">
         <div className="speakercard__left">
-          <Img
-            className="speakercard__left-image"
-            fluid={image}
-            alt="speakers"
-          />
+          <GatsbyImage image={image} className="speakercard__left-image" alt="speakers" />
           <h2 className="speakercard__left-title">{speakerName}</h2>
           <h3 className="speakercard__left-subtitle">{subTitle}</h3>
         </div>
@@ -95,7 +88,7 @@ const SpeakerCard = ({
         </div>
       </div>
     </ScrollAnimation>
-  )
+  );
 }
 
 export default ChiefGuest;
