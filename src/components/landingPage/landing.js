@@ -32,7 +32,7 @@ const Landing = () => {
             <div className="landing-content-title">
               <ScrollAnimation animateIn="fadeIn">
                 <p>
-                  dev<span>host</span> : 21
+                  dev<span>host</span> : 22
                 </p>
               </ScrollAnimation>
             </div>
@@ -43,7 +43,7 @@ const Landing = () => {
             </div>
             <div className="landing-content-dates">
               <ScrollAnimation animateIn="fadeIn">
-                <p>15th - 16th May</p>
+                <p>20th - 22nd May</p>
               </ScrollAnimation>
             </div>
             <div className="landing-content-button">

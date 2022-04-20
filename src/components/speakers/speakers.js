@@ -53,7 +53,7 @@ const Speakers = () => {
   return (
     <section className="speakers">
       <Container>
-        <h3 className="section__title">Speakers</h3>
+        <h3 className="section__title">Previous Speakers</h3>
         <SpeakerCard
           image={data.madhu.childImageSharp.fluid}
           speakerName="Madhu Akula"

@@ -18,15 +18,15 @@
 
 iframe{
     width: 100%;
-    height: 2800px;
+    height: 400px;
     @include respond(phone) {
-        height: 3015px;
+        height: 400px;
     }        
     @include respond(med-phone) {
-        height: 3300px;
+        height: 400px;
     }
     @include respond(small-phone) {
-        height: 3500px;
+        height: 600px;
     }
 }
 

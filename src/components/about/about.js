@@ -18,13 +18,13 @@ const About = () => {
               from anywhere across the globe under the same umbrella. This event
               aims to create a platform to collaborate with various clubs and
               organizations, discuss the newest technologies and trends in the
-              IT industry an also train students for the same. devhost:21 claims
+              IT industry an also train students for the same. devhost:22 claims
               to be a tech extravaganza, and the biggest event under SOSC so
               far.
-              <br />
-              <br />
-              Considering the ongoing pandemic, devhost:21 will be an online
-              event.
+              {/* <br /> */}
+              {/* <br /> */}
+              {/* Considering the ongoing pandemic, devhost:21 will be an online
+              event. */}
             </p>
           </div>
         </ScrollAnimation>

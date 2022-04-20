@@ -1,6 +1,6 @@
 import React from "react"
 
-import Logo from "../images/logo.svg"
+import Logo from "../images/nav-logo.svg"
 import Container from "./container"
 
 const Header = () => {

@@ -97,7 +97,7 @@ const Sponsors = () => {
   return (
     <section className="sponsors">
       <Container>
-        <div className="section__title">Sponsors</div>
+        <div className="section__title">Previous Sponsors</div>
         <div className="sponsors__images">
           <a target="_blank" rel="noreferrer" href="https://github.com/">
             <Img

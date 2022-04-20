@@ -55,7 +55,7 @@ const Events = () => {
   return (
     <section className="events">
       <Container>
-        <h3 className="section__title">Events</h3>
+        <h3 className="section__title">Previous Events</h3>
         <div className="events-holder">
 
           <ScrollAnimation animateIn="fadeIn">
