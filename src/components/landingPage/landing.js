@@ -1,32 +1,32 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+// import { useStaticQuery, graphql } from "gatsby"
+// import BackgroundImage from "gatsby-background-image"
 import ScrollAnimation from "react-animate-on-scroll"
 import { Link } from "gatsby"
 
 import { FaAngleDown } from "react-icons/fa"
 
 const Landing = () => {
-  const data = useStaticQuery(graphql`
-    query aboutQuery {
-      desktop: file(relativePath: { eq: "BG_2.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-  const imageData = data.desktop.childImageSharp.fluid
+  // const data = useStaticQuery(graphql`
+  //   query aboutQuery {
+  //     desktop: file(relativePath: { eq: "BG_2.png" }) {
+  //       childImageSharp {
+  //         fluid(quality: 90, maxWidth: 1920) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+  // const imageData = data.desktop.childImageSharp.fluid
 
   return (
     <section className="landing">
-      <BackgroundImage
+      {/* <BackgroundImage
         Tag="section"
         fluid={imageData}
         className={"landing-section"}
-      >
+      > */}
         <div className="landing-section-overlay">
           <div className="landing-content">
             <div className="landing-content-title">
@@ -56,7 +56,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </BackgroundImage>
+      {/* </BackgroundImage> */}
     </section>
   )
 }

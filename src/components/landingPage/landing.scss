@@ -1,14 +1,16 @@
-.landing-section {
-  width: 100%;
-  height: 100vh;
-  background-position: bottom center;
-  background-repeat: repeat-y;
-  background-size: cover;
-  background-color: #16161a;
+// .landing-section {
+//   width: 100%;
+//   height: 100vh;
+//   background-position: bottom center;
+//   background-repeat: repeat-y;
+//   background-size: cover;
+//   background-color: #16161a;
 
-  &-overlay {
+  .landing-section-overlay {
+    width: 100%;
+    height: 100vh;
     z-index: 1;
-    height: 100%;
+    // height: 100%;
     width: 100%;
     overflow: auto;
     top: 0px;
@@ -76,4 +78,4 @@
       }
     }
   }
-}
+// }
