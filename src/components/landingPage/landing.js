@@ -43,14 +43,14 @@ const Landing = () => {
             </div>
             <div className="landing-content-dates">
               <ScrollAnimation animateIn="fadeIn">
-                <p>20th - 22nd May</p>
+                <p>Coming Soon</p>
               </ScrollAnimation>
             </div>
-            <div className="landing-content-button">
+            {/* <div className="landing-content-button">
               <Link to="https://youtu.be/j4wDRdo4LOc" className="btn btn_violet-outline">
                 Watch Live Now
               </Link>
-            </div>
+            </div> */}
             <div className="scroll__container">
               <FaAngleDown className="scroll-indicator" />
             </div>
